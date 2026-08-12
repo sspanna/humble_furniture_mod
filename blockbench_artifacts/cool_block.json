@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "humble_furniture:block/cool_block_1",
-		"particle": "humble_furniture:block/cool_block_1"
+		"0": "cool_block_1",
+		"particle": "cool_block_1"
 	},
 	"elements": [
 		{
