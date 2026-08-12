@@ -6,8 +6,8 @@ A Minecraft Fabric mod for 26.2.
 
 Requires [SDKMAN](https://sdkman.io) and git.
 
-    git clone git@github.com:<you>/tee2026.git
-    cd tee2026
+    git clone git@github.com:sspanna/humble_furniture_mod.git
+    cd humble_furniture_mod
     sdk env install     # installs the pinned JDK from .sdkmanrc
     ./gradlew runClient  # launches a dev Minecraft with the mod loaded
 
