@@ -10,7 +10,7 @@ Requires:
 - Minecraft 26.2 running on Java 25+
 
 Steps:
-1. Download the mod jar from [Modrinth](https://modrinth.com/) (TODO: link once the project is published) or this repo's [Releases](https://github.com/sspanna/humble_furniture_mod/releases) page.
+1. Download the mod jar from [Modrinth](https://modrinth.com/mod/humble-furniture) or this repo's [Releases](https://github.com/sspanna/humble_furniture_mod/releases) page.
 2. Drop the jar into your `.minecraft/mods` folder.
 3. Launch Minecraft with the Fabric profile.
 

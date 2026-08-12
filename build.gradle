@@ -56,7 +56,7 @@ jar {
 // configure publishing to Modrinth (run via `./gradlew modrinth`, needs MODRINTH_TOKEN)
 modrinth {
 	token = System.getenv("MODRINTH_TOKEN")
-	projectId = "TODO-fill-in-after-creating-the-modrinth-project"
+	projectId = "humble-furniture"
 	versionNumber = project.version
 	versionType = "release"
 	uploadFile = tasks.named("jar")
