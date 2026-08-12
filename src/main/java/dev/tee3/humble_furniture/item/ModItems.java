@@ -8,13 +8,20 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ToolMaterial;
 
 import dev.tee3.humble_furniture.Humble_furniture;
 
 public class ModItems {
 	public static final ResourceKey<Item> SWORD_KEY =
 			ResourceKey.create(Registries.ITEM, Humble_furniture.id("sword"));
-	public static final Item SWORD = new Item(new Item.Properties().setId(SWORD_KEY));
+	public static final Item SWORD = new Item(
+			ToolMaterial.DIAMOND.applySwordProperties(
+					new Item.Properties().setId(SWORD_KEY),
+					3.0F,
+					-2.4F
+			)
+	);
 
 	public static void initialize() {
 		Registry.register(BuiltInRegistries.ITEM, SWORD_KEY, SWORD);
