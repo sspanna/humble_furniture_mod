@@ -1,0 +1,28 @@
+# Publish a release to Modrinth whenever a version tag (e.g. v1.0.1) is pushed.
+# Requires a MODRINTH_TOKEN secret (Modrinth account -> Settings -> PATs) with
+# version-upload scope, and build.gradle's modrinth.projectId to be set.
+
+name: publish
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+      - name: validate gradle wrapper
+        uses: gradle/actions/wrapper-validation@v6
+      - name: setup jdk
+        uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'microsoft'
+      - name: make gradle wrapper executable
+        run: chmod +x ./gradlew
+      - name: publish to modrinth
+        run: ./gradlew modrinth
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}

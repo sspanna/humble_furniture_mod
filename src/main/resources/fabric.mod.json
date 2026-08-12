@@ -3,13 +3,13 @@
 	"id": "humble_furniture",
 	"version": "${version}",
 	"name": "humble_furniture",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A work-in-progress Fabric mod adding furniture and other content to Minecraft.",
 	"authors": [
-		"Me!"
+		"sspanna"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/sspanna/humble_furniture_mod",
+		"sources": "https://github.com/sspanna/humble_furniture_mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/humble_furniture/icon.png",
