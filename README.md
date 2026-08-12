@@ -1,9 +1,16 @@
-# humble_furniture
+# Humble Furniture
+
+A Minecraft Fabric mod for 26.2.
 
 ## Setup
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+Requires [SDKMAN](https://sdkman.io) and git.
 
-## License
+    git clone git@github.com:<you>/tee2026.git
+    cd tee2026
+    sdk env install     # installs the pinned JDK from .sdkmanrc
+    ./gradlew runClient  # launches a dev Minecraft with the mod loaded
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## Build a distributable jar
+
+    ./gradlew build      # output lands in build/libs/
