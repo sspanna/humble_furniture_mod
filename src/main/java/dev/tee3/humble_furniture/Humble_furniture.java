@@ -7,6 +7,8 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import dev.tee3.humble_furniture.block.ModBlocks;
+
 public class Humble_furniture implements ModInitializer {
 	public static final String MOD_ID = "humble_furniture";
 
@@ -22,6 +24,8 @@ public class Humble_furniture implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+		ModBlocks.initialize();
 	}
 
 	public static Identifier id(String path) {
