@@ -24,6 +24,14 @@ public class ModBlocks {
 					.strength(2.0f)
 					.sound(SoundType.STONE));
 
+	public static final ResourceKey<Block> CHAIR_KEY =
+			ResourceKey.create(Registries.BLOCK, Humble_furniture.id("chair"));
+	public static final Block CHAIR = new ChairBlock(
+			BlockBehaviour.Properties.of()
+					.setId(CHAIR_KEY)
+					.strength(2.0f)
+					.sound(SoundType.WOOD));
+
 	public static void initialize() {
 		Registry.register(BuiltInRegistries.BLOCK, COOL_BLOCK_1_KEY, COOL_BLOCK_1);
 
@@ -35,5 +43,16 @@ public class ModBlocks {
 
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS)
 				.register(output -> output.accept(COOL_BLOCK_1));
+
+		Registry.register(BuiltInRegistries.BLOCK, CHAIR_KEY, CHAIR);
+
+		ResourceKey<Item> chairItemKey = ResourceKey.create(Registries.ITEM, Humble_furniture.id("chair"));
+		Registry.register(
+				BuiltInRegistries.ITEM,
+				chairItemKey,
+				new BlockItem(CHAIR, new Item.Properties().setId(chairItemKey)));
+
+		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS)
+				.register(output -> output.accept(CHAIR));
 	}
 }

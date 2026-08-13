@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "humble_furniture:block/chair"
+		},
+		"facing=east": {
+			"model": "humble_furniture:block/chair",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "humble_furniture:block/chair",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "humble_furniture:block/chair",
+			"y": 270
+		}
+	}
+}

@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import dev.tee3.humble_furniture.block.ModBlocks;
+import dev.tee3.humble_furniture.entity.ModEntities;
 import dev.tee3.humble_furniture.item.ModItems;
 
 public class Humble_furniture implements ModInitializer {
@@ -26,6 +27,7 @@ public class Humble_furniture implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 
+		ModEntities.initialize();
 		ModBlocks.initialize();
 		ModItems.initialize();
 	}
