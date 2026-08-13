@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"dev.tee3.humble_furniture.Humble_furniture"
+		],
+		"client": [
+			"dev.tee3.humble_furniture.client.Humble_furnitureClient"
 		]
 	},
 	"mixins": [
